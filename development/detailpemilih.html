@@ -1,0 +1,69 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title></title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		
+		<!-- FontAwesome - http://fortawesome.github.io/Font-Awesome/ -->
+        <link rel="stylesheet" href="css/font-awesome.min.css" />
+
+		<!-- jQueryMobileCSS - original without styling -->
+        <link rel="stylesheet" href="css/jquerymobile.css" />
+
+		<!-- nativeDroid core CSS -->
+        <link rel="stylesheet" href="css/jquerymobile.nativedroid.css" />
+
+		<!-- nativeDroid: Light/Dark -->
+        <link rel="stylesheet" href="css/jquerymobile.nativedroid.light.css"  id='jQMnDTheme' />
+
+		<!-- nativeDroid: Color Schemes -->
+        <link rel="stylesheet" href="css/jquerymobile.nativedroid.color.green.css" id='jQMnDColor' />
+
+		<!-- jQuery / jQueryMobile Scripts -->
+		<script src="js/jquery-1.9.1.min.js"></script>
+        <script src="js/jquery.mobile-1.3.2/jquery.mobile-1.3.2.min.js"></script>
+
+		<!-- Extras for: Cards.html -->
+	    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+
+        <script src="js/detailpemilih.js"></script>
+
+
+    </head>
+    <body>
+
+	<div id='map-canvas'></div>
+        
+    <div data-role="page" data-theme='b'>
+
+
+        <div data-role="header" data-position="fixed" data-tap-toggle="false" data-theme='b'>
+            <a href="index.html" data-ajax="false"><i class='icon-ellipsis-vertical'></i></a>
+            <h1>Data Diri</h1>
+        </div>
+        
+        <div data-role="content">
+			<ul data-nativedroid-plugin='cards'>
+				<li data-cards-type='weather' id="foto">
+				</li>
+
+				<li data-cards-type='publictransport' id="profil">
+					<h1>Daerah Pemilihan</h1>
+				</li>
+				<li data-cards-type='traffic' data-cards-traffic-route='{"from":"42.350742,-71.083217","to":"42.353709,-71.053613","type" : "coords"}' id="sejarah">
+					<h1><strong>Profil</strong></h1>
+				</li>
+
+				<li data-cards-type='sports' id="program">
+					<h1>Status</h1>
+				</li>
+			</ul>
+
+	        
+        </div>
+
+    </div>
+    
+    <script src="js/nativedroid.script.js"></script>
+    </body>
+</html>
